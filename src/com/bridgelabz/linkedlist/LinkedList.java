@@ -36,12 +36,29 @@ public class LinkedList <T> {
         }
     }
 
+    public void insert(T Key)
+    {
+        Node<T> node = new Node<>(Key);
+        head.next = node;
+        node.next = tail;
+    }
+
     public T pop(){
         T deletedData = head.data;
         head = head.next;
         return deletedData;
     }
+    public T popLast() {
+        T deletedElement = tail.data;
+        Node<T> temp = head;
+        while(temp.next != tail){
+            temp = temp.next;
+        }
+        temp.next = null;
+        temp = tail;
+        return  deletedElement;
 
+    }
 
 
 }

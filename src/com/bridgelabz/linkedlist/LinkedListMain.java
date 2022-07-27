@@ -13,7 +13,7 @@ public class LinkedListMain {
         linkedList.print();
         System.out.println();
 
-        linkedList.pop();
+        linkedList.popLast();
         linkedList.print();
     }
     
