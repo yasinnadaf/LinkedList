@@ -1,7 +1,7 @@
 package com.bridgelabz.linkedlist;
 
 public class LinkedListMain {
-    
+
     public static void main(String[] args) {
 
         LinkedList<Integer> linkedList = new LinkedList<>();
