@@ -36,6 +36,13 @@ public class LinkedList <T> {
         }
     }
 
+    public void insert(T Key)
+    {
+        Node<T> node = new Node<>(Key);
+        head.next = node;
+        node.next = tail;
+    }
+
 
 
 }
