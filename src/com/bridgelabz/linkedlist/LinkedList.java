@@ -36,6 +36,12 @@ public class LinkedList <T> {
         }
     }
 
+    public T pop(){
+        T deletedData = head.data;
+        head = head.next;
+        return deletedData;
+    }
+
 
 
 }
