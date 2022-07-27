@@ -16,6 +16,6 @@ public class LinkedListMain {
         linkedList.pop();
         linkedList.print();
     }
-    
+
 }
 
