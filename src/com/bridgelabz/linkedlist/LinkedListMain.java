@@ -13,8 +13,10 @@ public class LinkedListMain {
         linkedList.print();
         System.out.println();
 
-        linkedList.popLast();
-        linkedList.print();
+        if (linkedList.search(30) != null)
+            System.out.println("Element Found in list");
+        else
+            System.out.println("Element not Found in list");
     }
     
 }
